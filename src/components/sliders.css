@@ -1,0 +1,158 @@
+.main-cotainer{
+    text-align: center;
+    border:1px solid #000000;
+    margin: 5%;
+    align-items: center;
+    background-color: rgb(234, 238, 241);
+}
+
+.tag-container{
+    display: flex;
+    flex-direction: column;
+}
+.tag-container ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.tag-container li{
+    list-style: none;
+    color: rgb(39, 38, 38);
+    font-size: large;
+    font-weight: 500;
+
+}
+
+.progress-bars-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 50px 0px 0px 80px;
+    text-align: center;
+}
+
+.progress-bar {
+    flex-grow: 1;
+    height: 12px;
+    background-color: #a7a1a1;
+    border-radius: 20px;
+    margin: 0 5px;
+    overflow: hidden; 
+}
+
+.progress-segment {
+    height: 100%;
+    background: linear-gradient(90deg, red, yellow); 
+    border-radius: 10px;
+    transition: width 0.3s ease; 
+}
+
+.random-choices h1{
+    color: orangered;
+    font-size: 50px;
+}
+.random-choices p{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+
+/* buttons */
+
+.button-container {
+  margin: 20px 0 30px 200px;
+
+}
+
+.buttons-line {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 80%;
+}
+
+.buttons-line::before {
+    content: '';
+    position: absolute;
+    top: 13%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: rgb(187, 176, 176);
+    z-index: 1;
+
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 3;
+    position: relative;
+    
+}
+
+.button-wrapper span {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(124, 123, 123);
+}
+
+.button-wrapper button {
+    width: 10px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: rgb(146, 137, 137);
+}
+
+button {
+    width: 9px;
+    height: 10px;
+    border-radius: 60%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0px auto; /* Center the buttons */
+   
+}
+
+
+.button-wrapper button.clicked {
+    background-color: rgb(126, 23, 23);
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 5%;
+}
+
+.navigation-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: gray;
+    color: rgb(238, 23, 23);
+    transition: background-color 0.3s ease;
+}
+
+.navigation-buttons button:disabled {
+    background-color: rgb(196, 36, 36);
+    cursor: not-allowed;
+}
+.btns{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+.btns button{
+    color: black;
+    
+}
